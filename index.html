@@ -1,6 +1,32 @@
 <html>
   <head>
     <style>
+      body {
+        font-family: sans-serif;
+      }
+      subtitle {
+        font-size: x-large;
+      }
+      .side-by-side {
+        width: 100%;
+        overflow: hidden;
+      }
+      .side-by-side div:first-of-type {
+        float: left
+      }
+      .image-container {
+        text-align: center
+        width: 100%;
+      }
+      .image-container button {
+        background: none;
+      }
+      .image-expand {
+        width: 20%
+      }
+      .image-expand:active img .image-expand:focus img {
+        width: 100%
+      }
       table {
        table-layout: fixed;
        width: 100%;
@@ -14,14 +40,20 @@
       td:first-of-type {
         text-align: right;
       }
+      footer {
+        font-size: x-large;
+        text-align: center;
+        padding: 10px;
+      }
     </style>
+    <title>The Pocket Gospel Illustration</title>
   </head>
   <body>
-    <title>The Pocket Gospel Illustration</title>
+    <h1>The Pocket Gospel Illustration by André Kole</h1>
     <subtitle>A tool to explain the truth about our relationship with God in just three minutes.</subtitle>
     <nav>
     </nav>
-    <section>
+    <section class="side-by-side">
       <div>
         <iframe width="560" height="340" src="https://www.youtube.com/embed/cdLbACTAB54" title="The Pocket Gospel Illustration -
           Student Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture
@@ -50,7 +82,7 @@
         <p>We recommend one which has no potentially distracting inscription.</p>
       </div>
     </section>
-    <section>
+    <section class="side-by-side">
       <h1>Practice the Knot</h1>
       <div>
         <p>The key to this illustration is to convincingly tie a knot which dissolves when the ends are pulled. Learn the move from
@@ -59,7 +91,11 @@
       <div><iframe width="540" height="360" src="https://www.youtube.com/embed/avrr2e48b7w" title="How to tie the Pocket Gospel
              Illustration knot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture
              in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-      <div><img src="PGI_knot_instruction_diagrams.gif" alt="Instructions for tying the dissolving knot."></div>
+      <div class="image-container">
+        <button class="image-expand">
+          <img src="PGI_knot_instruction_diagrams.gif" alt="Instructions for tying the dissolving knot."></div>
+          <p>Click to expand</p>
+        </button>
     </section>
     <section>
       <h1>Presentation</h1>
